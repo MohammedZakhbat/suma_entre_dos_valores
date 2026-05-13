@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
     <title>Suma entre dos números</title>
 </head>
-<body>
-    <div>
-        <div>
-            <h1>
+<body class="bg-slate-100 flex items-center justify-center h-screen">
+    <div class="bg-white shadow-xl borderborder-slate-200 rounded-2xl p-8 w-full max-w-md space-y-5"  >
+        <div class="text-center space-y-1"> 
+            <h1 class="text-2xl font-bold text-slate-800">
                 Suma entre dos números
             </h1>
-            <p>
+            <p class="text-slate-500 text-sm">
                 Calculadora
             </p>
         </div>
-        <input type="number" id="num1" placeholder="Número 1">
-        <input type="number" id="num2" placeholder="Número 2">
-        <button onclick="calcularSuma()">Calcular</button>
+        <input type="number" id="num1" placeholder="Número 1" class="w-full p-3 rounded-xl border border-slate-200 focus:ring-cyan-400 outline-none">
+        <input type="number" id="num2" placeholder="Número 2" class="w-full p-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-cyan-400 outline-none"> 
+        <button onclick="calcularSuma()" class="w-full bg-cyan-500 hover:bg-cyan-600 text-white p-3 rounded-xl font-semibold transition">Calcular</button>
         <div id="resultado">
 
         </div>
